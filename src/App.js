@@ -17,6 +17,8 @@ const App = () => {
     setExpenses((prevExpense) => {
       return [expense, ...prevExpense]
     });
+
+    if(!expense.data) return
   } 
 
   return (
